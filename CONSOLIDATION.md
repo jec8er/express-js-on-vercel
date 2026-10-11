@@ -1,7 +1,7 @@
-# Consolidated into SaborClick Studio
+# Standalone SaborClick Studio
 
-The active application is [jec8er/SAlesC](https://github.com/jec8er/SAlesC). Commerce, SoundForge content tools and revenue tracking share a standalone Express API with SQLite persistence and owner-password sessions.
+The independent application is ready on [SAlesC/github-runtime](https://github.com/jec8er/SAlesC/tree/github-runtime), with integration into main proposed in [PR #2](https://github.com/jec8er/SAlesC/pull/2).
 
-The original Express prototype is preserved here and under `legacy/express/` in the canonical repository. New development belongs in `SAlesC/server/` and `SAlesC/src/`.
+Commerce, SoundForge content tools and revenue tracking share an Express API with SQLite persistence and owner-password sessions. Development belongs in that branch's `server/` and `src/` directories. The original Express prototype remains preserved here and in `legacy/express/`.
 
-The project no longer depends on Sites, Cloudflare bindings or ChatGPT authentication. Follow the canonical README for local startup and optional server deployment. GitHub stores and validates the code; no new external server is provisioned automatically.
+The standalone branch requires no Sites, Cloudflare or ChatGPT authentication. Follow its README for startup. Main still contains the earlier implementation until PR #2 is integrated. GitHub stores and validates code; no new external server has been provisioned.
